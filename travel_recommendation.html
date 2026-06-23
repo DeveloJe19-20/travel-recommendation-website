@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TravelMarvel</title>
+    <link rel="stylesheet" type="text/css" href="travel_recommendation.css">
+
+
+</head>
+<body>
+    <!--The navigation bar of the website-->
+    <nav id="navigation-bar">
+        <div id="website-name">
+            <span>TRAVEL MARVEL</span>            
+        </div>
+        <div id="page-links">
+            <a class="nav-link" href="./travel_recommendation.html">Home</a> 
+            <a class="nav-link" href="./about.html">About Us</a> 
+            <a class="nav-link" href="./contact.html">Contact Us</a> 
+        </div>
+        <div id="search-bar-container">
+            <input id="search-bar" type="text" placeholder="Enter a destination or keyword">
+            <button id="search-button" onclick="">Search</button>
+            <button id="clear-button">Clear</button>
+        </div>
+    </nav>
+    <!--The rest of the website below the navigation bar-->
+    <section id="main-content">
+        <div id="site-intro">
+            <h1>EXPLORE YOUR DREAM DESTINATION</h1>
+            <p>
+                The Travel Marvel website helps users explore popular travel destinations
+                through an interactive and user-friendly interface. It lets users search for
+                beaches, temples, countries, or specific country names to view related cities
+                along with images and descriptions. The app dynamically fetches data from a structured
+                JSON file to display relevant results. It provides a simple and efficient way to discover
+                and plan travel destinations.
+
+            </p>
+        </div>
+        <div id="results-section">
+            <h1>Search Results</h1>
+            <div id="recommendation-container">
+            </div>
+        </div>
+    </section>
+    
+    <script src="travel_recommendation.js"></script>
+</body>
+
+</html>

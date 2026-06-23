@@ -1,0 +1,148 @@
+/*CSS for the travel_recommendation.html page*/
+#navigation-bar {
+    display: flex;
+    width: 100%;
+    background-color: cadetblue;
+    justify-content: center;
+    gap: 45px;
+    border: 1px solid black;
+    padding: 20px 0;
+    margin: 0;
+    opacity: 1;
+}
+
+#website-name {
+    font-family: "Trebuchet MS", sans-serif; 
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#page-links{
+    display: flex;
+    gap: 35px;
+
+}
+.nav-link {
+    color: white;
+}
+
+#search-bar-container {
+    display: flex;
+    gap: 25px;
+    
+}
+
+#search-bar {
+    width: 300px;
+}
+
+body {
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#main-content{
+    color:white;
+    font-size: 25px;
+}
+#recommendation-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#results-section {
+    display: none;
+
+}
+.recommendation-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recommendation-card{
+    background-color: white;
+    color: black;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    
+}
+
+
+
+.role{
+    border-style: solid;
+    background-color: blue;
+    color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 70px;
+}
+
+
+#about-page-main-content{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+
+}
+
+
+
+
+#our-team{
+    display:flex;
+    gap:30px;
+}
+
+#staff-member-container{
+    display:flex;
+    gap: 20px;
+}
+.staff-member {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.staff-member h1,
+.staff-member p,
+.staff-member span {
+    margin: 0;
+}
+
+
+
+/*CSS exclusive to contact.html*/
+#contact-form{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+
+}
+
+#contact-page-main-content{
+    display:flex;
+    justify-content: center;
+    gap: 300px;
+    color: white; 
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+
