@@ -41,7 +41,7 @@
                 })
                 .then(data => {
                     //Handle and use the JSON data
-                    if (userInput == "beaches"){
+                    if (userInput == "beach" || userInput == "beaches") {
                         clearRecommendations();
                         for (i = 0; i <= 1; i++) {
                             const name = data.beaches[i].name;
@@ -52,7 +52,7 @@
                             document.getElementById("recommendation-container").innerHTML += createRecommendation(name, imageUrl, description);
                         }
                     }
-                    else if (userInput == "temples"){
+                    else if (userInput == "temple" || userInput == "temples") {
                         clearRecommendations();
                         for (i = 0; i <= 1; i++) {
                             const name = data.temples[i].name;
@@ -64,7 +64,7 @@
                         }
 
                     }
-                    else if (userInput == "countries"){
+                    else if (userInput == "country" || userInput == "countries") {
                         clearRecommendations();
                         for (i = 0; i <= 2; i++) {
                             const country = data.countries[i];
